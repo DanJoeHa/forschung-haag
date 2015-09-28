@@ -4,12 +4,24 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	
-	<title>Forschung Haag</title>
+	<title><?= $conf['meta']['title'] ?></title>
 	
 	<meta name="author" content="Johannes Haag" />
-	<meta name="description" content="Historische Forschung Simon M. Haag MA" />
-	<meta name="keywords" content="Simon M. Haag MA, Simon M. Haag, Simon, Haag, Forschung, Historische Forschung, Wappen" />
+	<meta name="description" content="<?= $conf['meta']['description'] ?>" />
+	<meta name="keywords" content="<?= $conf['meta']['keywords'] ?>" />
+	
+	<link href="template/style.css" rel="stylesheet" />
 	
 </head>
 <body>
 	
+	<header>
+		<img src="template/img/logo.jpg" />
+		<h1><?= $conf['meta']['title'] ?></h1>
+		<a href="#menu" target="_self" title="Menu">
+			&equiv;
+		</a>
+	</header>
+	
+	<article>
+		<div>
