@@ -1,4 +1,4 @@
-<div>
+<div id="chooser">
 	<a href="index.php?p=1" title="Forschung" target="_self">
 		Forschung
 	</a>

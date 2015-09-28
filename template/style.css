@@ -1,4 +1,11 @@
 /* --------------- Allgemein ---------------- */
+* {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
 @-ms-viewport {
 	width: device-width;
 }
@@ -7,18 +14,16 @@ html {
 	/* Delay von 300ms auf MS Touch-Geräten herausnehmen */
     -ms-touch-action: manipulation;
     touch-action: manipulation;
+    
+    height: 100%;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	box-sizing: border-box;
-}
-
-html, 
 body {
+	height: 100%;
 	font-family: Arial, Helvetica, sans-serif;
+	
+	background-image: url('img/wood_background_white.jpg');
+	background-size: cover;
 }
 /* --------------- Header ---------------- */
 header {
@@ -32,7 +37,7 @@ header img {
 	width: 17%;
 	display: inline-block;
 	
-	border: 0;
+	border: 0px;
 }
 
 header h1 {
@@ -64,9 +69,7 @@ header a:hover {
 /* --------------- Seiten ---------------- */
 article {
 	padding: 25px 5px;
-	
-	background-image: url('img/wood_background_white.jpg');
-	background-size: cover;
+	height: 90%;
 }
 
 article div {
@@ -84,6 +87,37 @@ article div h2 {
 	font-size: 1.1rem;
 	margin: 4px 0;
 }
+
+#chooser {
+	background-color: rgba(255, 255, 255, 0);
+	
+	border: 0;
+}
+
+#chooser a {
+	width: 32%;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 7% 0;
+	margin: 1% 0;
+	
+	text-align: center;
+	border: 1px solid #000000;
+}
+
+#chooser a:first-of-type,
+#chooser a:last-of-type {
+	width: 100%;
+	display: block;
+}
+
+@media screen and (min-width: 600px){
+	#chooser a{
+		padding: 5% 0;
+		width: 33%;
+	}
+}
+
 /* --------------- Footer ---------------- */
 nav {
 	background-color: #000000;

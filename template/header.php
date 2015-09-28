@@ -16,7 +16,7 @@
 <body>
 	
 	<header>
-		<img src="template/img/logo.jpg" />
+		<img src="template/img/logo.jpg" title="<?= $conf['meta']['title'] ?>" alt="<?= $conf['meta']['title'] ?>" />
 		<h1><?= $conf['meta']['title'] ?></h1>
 		<a href="#menu" target="_self" title="Menu">
 			&equiv;
